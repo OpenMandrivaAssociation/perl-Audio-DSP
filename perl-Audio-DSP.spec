@@ -13,7 +13,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{module}-%{version
 Patch0:		Audio-DSP-0.02-VOCP.patch
 Url:		http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Audio::DSP is built around the OSS (Open Sound System) API and allows perl to
