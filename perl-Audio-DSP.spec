@@ -1,7 +1,7 @@
 %define module	Audio-DSP
 %define name	perl-%{module}
 %define version 0.02
-%define release %mkrel 9
+%define release %mkrel 10
 
 Name:		%{name}
 Version:	%{version}
