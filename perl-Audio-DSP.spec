@@ -1,19 +1,19 @@
-%define module	Audio-DSP
-%define name	perl-%{module}
-%define version 0.02
-%define release %mkrel 13
+%define upstream_name	 Audio-DSP
+%define upstream_version 0.02
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Perl interface to OSS digital audio device
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Audio-DSP-0.02-VOCP.patch
-Url:		http://search.cpan.org/dist/%{module}/
+
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Audio::DSP is built around the OSS (Open Sound System) API and allows perl to
@@ -29,7 +29,7 @@ distributed with with the Linux kernel.
 
 %prep
 
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 %patch0 -p1
 
 %build
@@ -52,6 +52,3 @@ distributed with with the Linux kernel.
 %{perl_vendorarch}/Audio
 %{perl_vendorarch}/auto/Audio
 %{_mandir}/man3/*
-
-
-
