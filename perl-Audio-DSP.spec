@@ -8,7 +8,7 @@ Release:	6
 Summary:	Perl interface to OSS digital audio device
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Audio-DSP-0.02-VOCP.patch
 
