@@ -12,6 +12,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Audio-DSP-0.02-VOCP.patch
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
