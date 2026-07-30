@@ -2,14 +2,14 @@
 %define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	6
+Version:	0.02
+Release:	1
 
 Summary:	Perl interface to OSS digital audio device
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	https://cpan.metacpan.org/authors/id/S/SE/SETHJ/Audio-DSP-0.02.tar.gz
 Patch0:		Audio-DSP-0.02-VOCP.patch
 
 BuildRequires:	make
@@ -98,7 +98,7 @@ distributed with with the Linux kernel.
 * Tue Aug 29 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.02-9mdv2007.0
 - Rebuild
 
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.02-8mdk
+* Fri Apr 28 2006 Nicolas Lï¿½cureuil <neoclust@mandriva.org> 0.02-8mdk
 - Fix SPEC Using perl Policies
 	- Source URL
 
