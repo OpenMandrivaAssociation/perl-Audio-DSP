@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.02
-Release:	1
+Release:	2
 
 Summary:	Perl interface to OSS digital audio device
 License:	GPL+ or Artistic
@@ -14,7 +14,6 @@ Patch0:		Audio-DSP-0.02-VOCP.patch
 
 BuildRequires:	make
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Audio::DSP is built around the OSS (Open Sound System) API and allows perl to
@@ -34,7 +33,7 @@ distributed with with the Linux kernel.
 %patch -P0 -p1
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make CFLAGS="%{optflags}"
 
 %check
