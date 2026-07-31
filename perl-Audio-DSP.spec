@@ -2,8 +2,8 @@
 %define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
-Version:	0.02
-Release:	2
+Version:	0.03
+Release:	1
 
 Summary:	Perl interface to OSS digital audio device
 License:	GPL+ or Artistic
@@ -29,7 +29,7 @@ distributed with with the Linux kernel.
 
 %prep
 
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n Audio-DSP-0.02
 %patch -P0 -p1
 
 %build
