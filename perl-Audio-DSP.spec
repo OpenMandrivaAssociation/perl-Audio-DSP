@@ -2,7 +2,7 @@
 %define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
-Version:	0.03
+Version:	0.02
 Release:	1
 
 Summary:	Perl interface to OSS digital audio device
@@ -38,7 +38,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %check
 # doesn't work
-
+make test || :
 %install
 %{__rm} -rf %{buildroot} 
 %makeinstall_std
